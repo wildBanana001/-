@@ -25,10 +25,17 @@ Vue.use(VueLazyload, {
 Vue.filter('currency',currency)
 Vue.config.productionTip = false
 
+
+const store = new Vuex.Store({
+
+})
+
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
